@@ -1,0 +1,3122 @@
+<html style="overflow: hidden;"><head><meta charset="utf-8"><title>JournalAutotests</title><link rel="stylesheet" href="./styles/main.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<template id="t_72099"><ms-frame id="72113" height="300" width="400" x="0" y="0" proportiontype="0"></ms-frame></template><template id="t_72275"><ms-togglebutton id="72384" elname="Кнопка 1" height="20" width="130" x="30" y="40" isfixed="false" ispressed="false" text="Методы" z="1" tabindex="1" textcolor="WHITE" backgroundcolor="rgb(74,183,255)" bordercolor="WHITE" actionlist="{&quot;click&quot;:[72415]}"></ms-togglebutton><ms-text id="73499" elname="Текст 1" height="20" width="130" x="30" y="20" z="2" tabindex="2" text="Тест методов" textcolor="WHITE"></ms-text><ms-text id="76004" elname="Текст 2" height="20" width="130" x="170" y="20" z="3" tabindex="3" text="Тест кнопок тулбара" textcolor="WHITE"></ms-text><ms-text id="76018" elname="Текст 3" height="20" width="130" x="310" y="20" z="4" tabindex="4" text="Тест фильтров RT" textcolor="WHITE"></ms-text><ms-togglebutton id="85120" elname="Кнопки Тулбара" height="20" width="130" x="170" y="40" isfixed="false" ispressed="false" text="Кнопки Тулбара" z="5" tabindex="5" textcolor="WHITE" bordercolor="WHITE" shadowcolor="rgb(74,183,255)" backgroundcolor="rgb(74,183,255)" actionlist="{&quot;click&quot;:[85162]}"></ms-togglebutton><ms-text id="85331" elname="Текст 4" height="20" width="130" x="30" y="70" z="7" tabindex="7" text="Test Case 12223" textcolor="WHITE"></ms-text><ms-togglebutton id="91113" elname="Кнопка 2" height="20" width="130" x="310" y="40" isfixed="false" ispressed="false" text="Фильтры RT" z="8" tabindex="8" textcolor="WHITE" backgroundcolor="rgb(74,183,255)" bordercolor="WHITE" actionlist="{&quot;click&quot;:[91155]}"></ms-togglebutton><ms-togglebutton id="96620" elname="Кнопка 3" height="20" width="130" x="450" y="40" isfixed="false" ispressed="false" text="Легенда" z="9" tabindex="9" textcolor="WHITE" bordercolor="WHITE" backgroundcolor="rgb(74,183,255)" actionlist="{&quot;click&quot;:[96651]}"></ms-togglebutton><ms-text id="96656" elname="Текст 5" height="20" width="130" x="450" y="20" z="10" tabindex="10" text="Тест легенды" bordercolor="WHITE" textcolor="WHITE"></ms-text></template><template id="t_85011"><ms-journal id="85346" elname="Архивный журнал 1" z="1" width="580" height="200" x="30" y="30" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;45&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Icon&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" isglobal="false" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" askackcomment="true" usetimefilter="false" showstatusbar="true" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="85003" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-journal id="85551" elname="Архивный журнал 2" z="1" width="580" height="200" x="30" y="240" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;45&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Icon&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" isglobal="false" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" askackcomment="true" usetimefilter="false" showstatusbar="true" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="85003" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal></template><template id="t_96044"><ms-journal id="96153" elname="Архивный журнал 1" z="1" width="620" height="510" x="20" y="20" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;45&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Icon&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" isglobal="false" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" askackcomment="true" usetimefilter="false" showstatusbar="true" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="96036" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-journal id="96358" elname="Журнал 1" z="2" width="660" height="520" x="680" y="20" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;0&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Активные сообщения&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Квит&quot;,
+      &quot;columnwidth&quot;: &quot;54&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;BOOL&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Icon&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;2&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="2" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" isglobal="false" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="2592000000" showtoolbar="true" usearchive="false" till="1660856400000" hasobjecttree="false" askackcomment="true" statusbartextcolor="BLACK" showstatusbar="true" showverticalscrollbar="true" savestate="0" proportiontype="4" objectuid="96036" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-text id="96551" elname="Текст 1" height="40" width="940" x="370" y="550" z="3" tabindex="3" text="Test Case 19486: Возможность изменять высоту легенды журнала методом drag&amp;drop за границу"></ms-text><ms-togglebutton id="96579" elname="Кнопка с фиксацией 1" height="20" width="80" x="20" y="550" isfixed="true" ispressed="false" text="Активность" z="4" tabindex="4"></ms-togglebutton></template><template id="t_85175"><ms-journal id="86774" elname="Журнал 1" z="1" width="650" height="170" x="690" y="60" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;0&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Активные сообщения&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Квит&quot;,
+      &quot;columnwidth&quot;: &quot;54&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;BOOL&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;2&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="2592000000" showtoolbar="true" usearchive="false" till="1660856400000" hasobjecttree="false" askackcomment="true" statusbartextcolor="BLACK" showstatusbar="true" showverticalscrollbar="true" savestate="0" proportiontype="4" objectuid="85167" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-journal id="86967" elname="Архивный журнал 1" z="2" width="650" height="170" x="10" y="60" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;45&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="2" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" askackcomment="true" usetimefilter="false" showstatusbar="true" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="85167" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-journal id="90506" elname="Архивный журнал 2" z="4" width="650" height="170" x="10" y="270" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;45&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="2" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" askackcomment="true" usetimefilter="false" showstatusbar="true" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="85167" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-text id="87172" elname="Текст 1" height="20" width="650" x="10" y="230" z="3" tabindex="3" text="Архивный журнал фильтрация включена"></ms-text><ms-text id="90889" elname="Текст 3" height="20" width="650" x="690" y="230" z="6" tabindex="3" text="Архивный журнал фильтрация включена"></ms-text><ms-text id="90806" elname="Текст 2" height="20" width="650" x="10" y="440" z="5" tabindex="3" text="Архивный журнал фильтрация выключена"></ms-text><ms-text id="90904" elname="Текст 4" height="20" width="650" x="690" y="440" z="7" tabindex="3" text="Архивный журнал фильтрация выключена"></ms-text><ms-journal id="90919" elname="Журнал 2" z="8" width="650" height="170" x="690" y="270" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;0&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Активные сообщения&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Квит&quot;,
+      &quot;columnwidth&quot;: &quot;54&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;BOOL&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;20&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;2&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: false
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="4" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="2592000000" showtoolbar="true" usearchive="false" till="1660856400000" hasobjecttree="false" askackcomment="true" statusbartextcolor="BLACK" showstatusbar="true" showverticalscrollbar="true" savestate="0" proportiontype="4" objectuid="85167" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-togglebutton id="91178" elname="Кнопка с фиксацией 1" height="20" width="80" x="10" y="550" isfixed="true" ispressed="false" text="Активность" z="9" tabindex="5"></ms-togglebutton></template><template id="t_72158"><ms-journal id="72420" elname="Архивный журнал 1" z="1" width="650" height="170" x="10" y="40" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;1&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;UpdateType Equal 1 and Acked Equal False and Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Событие == Появление&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;40&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" isglobal="false" askackcomment="false" showlegend="false" showstatusbar="true" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" usetimefilter="false" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="72150" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-journal id="72625" elname="Журнал 1" z="2" width="650" height="170" x="700" y="40" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;0&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;UpdateType Equal 1 or Acked Equal False or Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Событие == Появление&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Квит&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;BOOL&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;2&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="2" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="2592000000" showtoolbar="true" usearchive="false" till="1660856400000" hasobjecttree="false" askackcomment="true" statusbartextcolor="BLACK" showstatusbar="true" showverticalscrollbar="true" savestate="0" proportiontype="4" objectuid="72150" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}"></ms-journal><ms-text id="72818" elname="Текст 1" height="30" width="260" x="10" y="230" z="3" tabindex="3" text="Архивный журнал" fontbold="true" fontsize="20" textcolor="WHITE" texthorizontalalign="0"></ms-text><ms-text id="72832" elname="Текст 2" height="30" width="260" x="700" y="230" z="7" tabindex="3" text="Оперативный журнал" fontbold="true" fontsize="20" textcolor="WHITE" texthorizontalalign="0"></ms-text><ms-togglebutton id="72850" elname="Кнопка 1" height="20" width="160" x="10" y="280" isfixed="false" ispressed="false" text="Следующая страница" z="8" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72881]}"></ms-togglebutton><ms-togglebutton id="72885" elname="Кнопка 2" height="20" width="160" x="170" y="280" isfixed="false" ispressed="false" text="Предыдущая страница" z="9" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72915]}"></ms-togglebutton><ms-togglebutton id="72919" elname="Кнопка 3" height="20" width="160" x="340" y="280" isfixed="false" ispressed="false" text="Первая страница" z="10" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72949]}"></ms-togglebutton><ms-togglebutton id="72953" elname="Кнопка 4" height="20" width="160" x="500" y="280" isfixed="false" ispressed="false" text="Последняя страница" z="11" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72983]}"></ms-togglebutton><ms-togglebutton id="72987" elname="Кнопка 5" height="20" width="160" x="10" y="320" isfixed="false" ispressed="false" text="Обновить" z="12" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73017]}"></ms-togglebutton><ms-togglebutton id="73021" elname="Кнопка 6" height="20" width="160" x="170" y="320" isfixed="false" ispressed="false" text="Квитировать сообщение" z="13" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73051]}"></ms-togglebutton><ms-togglebutton id="73055" elname="Кнопка 7" height="20" width="160" x="340" y="320" isfixed="false" ispressed="false" text="Следующее сообщение" z="14" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73085]}"></ms-togglebutton><ms-togglebutton id="73089" elname="Кнопка 8" height="20" width="160" x="500" y="320" isfixed="false" ispressed="false" text="Предыдущее сообщение" z="15" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73119]}"></ms-togglebutton><ms-togglebutton id="73123" elname="Кнопка 9" height="20" width="160" x="10" y="360" isfixed="false" ispressed="false" text="Показать легенду" z="16" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73153]}"></ms-togglebutton><ms-togglebutton id="73157" elname="Кнопка 10" height="20" width="160" x="170" y="360" isfixed="false" ispressed="false" text="Печать" z="17" tabindex="4" backgroundcolor="rgb(255,188,0)" actionlist="{&quot;click&quot;:[73187]}"></ms-togglebutton><ms-togglebutton id="73191" elname="Кнопка 11" height="20" width="160" x="340" y="360" isfixed="false" ispressed="false" text="Квитировать на странице" z="18" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73221]}"></ms-togglebutton><ms-togglebutton id="73225" elname="Кнопка 12" height="20" width="160" x="500" y="360" isfixed="false" ispressed="false" text="Экспортировать" z="19" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73255]}"></ms-togglebutton><ms-togglebutton id="73259" elname="Кнопка 13" height="20" width="160" x="10" y="400" isfixed="false" ispressed="false" text="Открыть дерево объекта" z="20" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73289]}"></ms-togglebutton><ms-togglebutton id="73293" elname="Кнопка 14" height="20" width="160" x="170" y="400" isfixed="false" ispressed="false" text="Переход по дате" z="21" tabindex="4" actionlist="{&quot;click&quot;:[73323]}"></ms-togglebutton><ms-togglebutton id="73352" elname="Кнопка с фиксацией 1" height="20" width="80" x="10" y="500" isfixed="true" ispressed="false" text="Активность" z="22" tabindex="5" bordercolor="WHITE" textcolor="WHITE" backgroundcolor="rgb(74,183,255)"></ms-togglebutton><ms-text id="73513" elname="Текст 3" height="20" width="230" x="90" y="500" z="23" tabindex="6" text="Активация/деактивация 5-ти тревог" textcolor="WHITE"></ms-text><ms-togglebutton id="73527" elname="Кнопка 15" height="20" width="160" x="700" y="280" isfixed="false" ispressed="false" text="Следующая страница" z="24" tabindex="7" actionlist="{&quot;click&quot;:[73558]}"></ms-togglebutton><ms-togglebutton id="73562" elname="Кнопка 16" height="20" width="160" x="860" y="280" isfixed="false" ispressed="false" text="Предыдущая страница" z="25" tabindex="7" actionlist="{&quot;click&quot;:[73592]}"></ms-togglebutton><ms-togglebutton id="73596" elname="Кнопка 17" height="20" width="160" x="1030" y="280" isfixed="false" ispressed="false" text="Первая страница" z="26" tabindex="7" actionlist="{&quot;click&quot;:[73626]}"></ms-togglebutton><ms-togglebutton id="73630" elname="Кнопка 18" height="20" width="160" x="1190" y="280" isfixed="false" ispressed="false" text="Последняя страница" z="27" tabindex="7" actionlist="{&quot;click&quot;:[73660]}"></ms-togglebutton><ms-togglebutton id="73664" elname="Кнопка 19" height="20" width="160" x="700" y="320" isfixed="false" ispressed="false" text="Квитировать ссобщение" z="28" tabindex="7" actionlist="{&quot;click&quot;:[73694]}"></ms-togglebutton><ms-togglebutton id="73698" elname="Кнопка 20" height="20" width="160" x="860" y="320" isfixed="false" ispressed="false" text="Следующее сообщение" z="29" tabindex="7" actionlist="{&quot;click&quot;:[73728]}"></ms-togglebutton><ms-togglebutton id="73732" elname="Кнопка 21" height="20" width="160" x="1030" y="320" isfixed="false" ispressed="false" text="Предыдущее сообщение" z="30" tabindex="7" actionlist="{&quot;click&quot;:[73762]}"></ms-togglebutton><ms-togglebutton id="73766" elname="Кнопка 22" height="20" width="160" x="1190" y="320" isfixed="false" ispressed="false" text="Обновить" z="31" tabindex="7" actionlist="{&quot;click&quot;:[73796]}"></ms-togglebutton><ms-togglebutton id="73800" elname="Кнопка 23" height="20" width="160" x="700" y="360" isfixed="false" ispressed="false" text="Показать легенду" z="32" tabindex="7" actionlist="{&quot;click&quot;:[73830]}"></ms-togglebutton><ms-togglebutton id="73834" elname="Кнопка 24" height="20" width="160" x="860" y="360" isfixed="false" ispressed="false" text="Печать" z="33" tabindex="7" backgroundcolor="rgb(255,188,0)" actionlist="{&quot;click&quot;:[73864]}"></ms-togglebutton><ms-togglebutton id="73868" elname="Кнопка 25" height="20" width="160" x="1030" y="360" isfixed="false" ispressed="false" text="Квитировать все" z="34" tabindex="7" actionlist="{&quot;click&quot;:[73898]}"></ms-togglebutton><ms-togglebutton id="73902" elname="Кнопка 26" height="20" width="160" x="1190" y="360" isfixed="false" ispressed="false" text="Квитировать на странице" z="35" tabindex="7" actionlist="{&quot;click&quot;:[73932]}"></ms-togglebutton><ms-togglebutton id="73936" elname="Кнопка 27" height="20" width="160" x="700" y="400" isfixed="false" ispressed="false" text="Экспортировать" z="36" tabindex="7" actionlist="{&quot;click&quot;:[73966]}"></ms-togglebutton><ms-togglebutton id="73970" elname="Кнопка 28" height="20" width="160" x="860" y="400" isfixed="false" ispressed="false" text="Открыть дерево объекта" z="37" tabindex="7" actionlist="{&quot;click&quot;:[74000]}"></ms-togglebutton><ms-togglebutton id="74004" elname="Кнопка 29" height="20" width="160" x="1030" y="400" isfixed="false" ispressed="false" text="Очистить" z="38" tabindex="7" actionlist="{&quot;click&quot;:[74034]}"></ms-togglebutton><ms-text id="74053" elname="Текст 4" height="30" width="150" x="10" y="10" z="39" tabindex="8" text="Test Case 12223" fontsize="16" fontbold="true" textcolor="WHITE"></ms-text><ms-rect id="76078" elname="Прямоугольник 1" height="20" width="80" x="10" y="530" bordergeometry="RECT" backgroundcolor="LIME" z="40" tabindex="9"></ms-rect><ms-rect id="76091" elname="Прямоугольник 2" height="20" width="80" x="10" y="550" bordergeometry="RECT" backgroundcolor="rgb(245,240,245)" z="41" tabindex="9"></ms-rect><ms-rect id="76104" elname="Прямоугольник 3" height="20" width="80" x="10" y="570" bordergeometry="RECT" backgroundcolor="rgb(255,156,0)" z="42" tabindex="9"></ms-rect><ms-text id="76119" elname="Текст 5" height="20" width="220" x="100" y="530" z="43" tabindex="10" text="  - реализован автотест" texthorizontalalign="0" textcolor="WHITE"></ms-text><ms-text id="76134" elname="Текст 6" height="20" width="220" x="100" y="550" z="44" tabindex="10" text=" - не реализован автотест" texthorizontalalign="0" textcolor="WHITE"></ms-text><ms-text id="76149" elname="Текст 7" height="20" width="220" x="100" y="570" z="89" tabindex="10" text=" - трудности с реализацией" texthorizontalalign="0" textcolor="WHITE"></ms-text><ms-text id="76164" elname="Текст 8" height="30" width="110" x="160" y="10" z="90" tabindex="11" text="Методы" fontsize="16" fontbold="true" textcolor="WHITE"></ms-text><ms-togglebutton id="83008" elname="Кнопка с фиксацией 2" height="20" width="180" x="480" y="460" isfixed="true" ispressed="false" text="Отображать строку статуса" z="91" tabindex="12" bordercolor="WHITE" textcolor="WHITE" backgroundcolor="rgb(74,183,255)"></ms-togglebutton><ms-line id="83063" elname="Линия 1" height="480" width="0" x="680" y="10" z="92" tabindex="13" bordercolor="WHITE"></ms-line><ms-line id="83076" elname="Линия 2" height="0" width="1330" x="10" y="490" z="93" tabindex="14" bordercolor="WHITE"></ms-line></template></head><body style="position:relative;margin:0;"><ms-window id="72099" elname="Шаблон экрана" objectid="72002" width="1920" height="1080" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" backgroundtile="2" proportiontype="4" template="t_72099" typeid="72099" root="" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; background-color: rgb(245, 240, 245); width: 1350px; height: 680px; opacity: 1;"><ms-frame id="72113" height="300" width="400" x="0" y="0" proportiontype="0" style="box-sizing: content-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; user-select: none; height: 680px; width: 1350px; left: 0px; top: 0px;"><ms-window id="72158" template="t_72158" typeid="72158" elname="MethodsPage" objectid="72150" width="1360" height="600" backgroundcolor="rgb(0,74,131)" mousecursorkind="0" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 1px; border-color: gray; background-color: rgb(0, 74, 131); width: 1360px; height: 600px; transform: scale(0.992647); transform-origin: 0px 0px;"><ms-journal id="72420" elname="Архивный журнал 1" z="1" width="650" height="170" x="10" y="40" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;1&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;UpdateType Equal 1 and Acked Equal False and Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Событие == Появление&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;&quot;,
+      &quot;columnwidth&quot;: &quot;40&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Событие&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;UpdateType&quot;,
+      &quot;fieldtype&quot;: &quot;HMI.EventChangeType&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Time&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время активации&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="1" isglobal="false" askackcomment="false" showlegend="false" showstatusbar="true" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="3600000" showtoolbar="true" usearchive="true" till="1660856400000" hasobjecttree="false" usetimefilter="false" showverticalscrollbar="true" requesttimeout="60000" savestate="0" proportiontype="4" objectuid="72150" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 1px; border-color: gray; z-index: 1; width: 650px; height: 170px; left: 10px; top: 40px; background-color: rgb(245, 240, 245); opacity: 1;"></ms-journal><ms-journal id="72625" elname="Журнал 1" z="2" width="650" height="170" x="700" y="40" filters="{
+  &quot;filter&quot;: {
+    &quot;enabled&quot;: true,
+    &quot;combinetype&quot;: &quot;0&quot;,
+    &quot;candisable&quot;: true,
+    &quot;condition&quot;: &quot;UpdateType Equal 1 or Acked Equal False or Active Equal True&quot;,
+    &quot;displayname&quot;: &quot;Событие == Появление&quot;
+  }
+}" tablecolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Квит&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Ack&quot;,
+      &quot;fieldtype&quot;: &quot;BOOL&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;2&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" legendcolumns="{
+  &quot;column&quot;: [
+    {
+      &quot;displayname&quot;: &quot;Время&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ActiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;dd.MM.yyyy HH:mm:ss&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Сообщение&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Message&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Приоритет&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Severity&quot;,
+      &quot;fieldtype&quot;: &quot;DINT&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время снятия&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;InactiveTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Время квитирования&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;AckedTime&quot;,
+      &quot;fieldtype&quot;: &quot;DATE_AND_TIME&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Пользователь&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;ClientUserId&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    },
+    {
+      &quot;displayname&quot;: &quot;Комментарий&quot;,
+      &quot;columnwidth&quot;: &quot;*&quot;,
+      &quot;field&quot;: &quot;Comment&quot;,
+      &quot;fieldtype&quot;: &quot;STRING&quot;,
+      &quot;valueformat&quot;: &quot;&quot;,
+      &quot;sort&quot;: &quot;0&quot;,
+      &quot;sortposition&quot;: 0,
+      &quot;visibility&quot;: true,
+      &quot;horizontalalign&quot;: &quot;1&quot;,
+      &quot;enablefilter&quot;: true
+    }
+  ]
+}" tabindex="2" isglobal="false" xtype="1" ytype="1" widthtype="1" heighttype="1" rowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" headerrowstyle="{
+  &quot;height&quot;: &quot;Auto&quot;,
+  &quot;borderthickness&quot;: 1,
+  &quot;bordercolor&quot;: &quot;GRAY&quot;,
+  &quot;backgroundcolor&quot;: &quot;rgb(245,240,245)&quot;,
+  &quot;backgroundcolorfilter&quot;: &quot;rgb(200,190,200)&quot;,
+  &quot;fontname&quot;: &quot;Tahoma&quot;,
+  &quot;fontsize&quot;: 12,
+  &quot;textcolor&quot;: &quot;BLACK&quot;,
+  &quot;textcolorfilter&quot;: &quot;BLACK&quot;,
+  &quot;fontitalic&quot;: false,
+  &quot;fontbold&quot;: false,
+  &quot;fontunderlined&quot;: false
+}" angle="0" scalex="1" scaley="1" borderthickness="1" bordercolor="GRAY" backgroundcolor="rgb(245,240,245)" opacity="100" borderstyle="0" flash="false" shadowsize="0" shadowcolor="rgb(240,240,240)" backgroundtile="2" isvisible="true" isenabled="true" dockstyle="3" horizontalalign="1" verticalalign="1" anchor="0" showlegend="false" autoscroll="true" limit="1000" legendbackgroundcolor="rgb(240,240,240)" toolbarbackgroundcolor="rgb(240,240,240)" filtersbackgroundcolor="rgb(240,240,240)" showfilter="false" showgrid="true" fullscreen="false" updateperiod="1000" interval="2592000000" showtoolbar="true" usearchive="false" till="1660856400000" hasobjecttree="false" askackcomment="true" statusbartextcolor="BLACK" showstatusbar="true" showverticalscrollbar="true" savestate="0" proportiontype="4" objectuid="72150" fieldstyles="{
+  &quot;Acked&quot;: {
+    &quot;FontItalic&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Acked&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  },
+  &quot;Active&quot;: {
+    &quot;FontBold&quot;: {
+      &quot;FieldType&quot;: &quot;BOOL&quot;,
+      &quot;FieldName&quot;: &quot;Active&quot;,
+      &quot;Value&quot;: &quot;False&quot;,
+      &quot;Convertations&quot;: {
+        &quot;DefaultValue&quot;: {
+          &quot;value&quot;: false,
+          &quot;type&quot;: &quot;static&quot;
+        },
+        &quot;SourceType&quot;: &quot;boolean&quot;,
+        &quot;TargetType&quot;: &quot;boolean&quot;,
+        &quot;Points&quot;: [
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: true,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          },
+          {
+            &quot;Source&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            },
+            &quot;Target&quot;: {
+              &quot;value&quot;: false,
+              &quot;type&quot;: &quot;static&quot;
+            }
+          }
+        ]
+      }
+    }
+  }
+}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 1px; border-color: gray; z-index: 2; width: 650px; height: 170px; left: 700px; top: 40px; background-color: rgb(245, 240, 245); opacity: 1;"></ms-journal><ms-text id="72818" elname="Текст 1" height="30" width="260" x="10" y="230" z="3" tabindex="3" text="Архивный журнал" fontbold="true" fontsize="20" textcolor="WHITE" texthorizontalalign="0" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: flex-start; text-align: left; align-items: center; background-color: transparent; height: 30px; width: 260px; left: 10px; top: 230px; z-index: 3;"></ms-text><ms-text id="72832" elname="Текст 2" height="30" width="260" x="700" y="230" z="7" tabindex="3" text="Оперативный журнал" fontbold="true" fontsize="20" textcolor="WHITE" texthorizontalalign="0" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: flex-start; text-align: left; align-items: center; background-color: transparent; height: 30px; width: 260px; left: 700px; top: 230px; z-index: 7;"></ms-text><ms-togglebutton id="72850" elname="Кнопка 1" height="20" width="160" x="10" y="280" isfixed="false" ispressed="false" text="Следующая страница" z="8" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72881]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 10px; top: 280px; z-index: 8;"></ms-togglebutton><ms-togglebutton id="72885" elname="Кнопка 2" height="20" width="160" x="170" y="280" isfixed="false" ispressed="false" text="Предыдущая страница" z="9" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72915]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 170px; top: 280px; z-index: 9;"></ms-togglebutton><ms-togglebutton id="72919" elname="Кнопка 3" height="20" width="160" x="340" y="280" isfixed="false" ispressed="false" text="Первая страница" z="10" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72949]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 340px; top: 280px; z-index: 10;"></ms-togglebutton><ms-togglebutton id="72953" elname="Кнопка 4" height="20" width="160" x="500" y="280" isfixed="false" ispressed="false" text="Последняя страница" z="11" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[72983]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 500px; top: 280px; z-index: 11;"></ms-togglebutton><ms-togglebutton id="72987" elname="Кнопка 5" height="20" width="160" x="10" y="320" isfixed="false" ispressed="false" text="Обновить" z="12" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73017]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 10px; top: 320px; z-index: 12;"></ms-togglebutton><ms-togglebutton id="73021" elname="Кнопка 6" height="20" width="160" x="170" y="320" isfixed="false" ispressed="false" text="Квитировать сообщение" z="13" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73051]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 170px; top: 320px; z-index: 13;"></ms-togglebutton><ms-togglebutton id="73055" elname="Кнопка 7" height="20" width="160" x="340" y="320" isfixed="false" ispressed="false" text="Следующее сообщение" z="14" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73085]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 340px; top: 320px; z-index: 14;"></ms-togglebutton><ms-togglebutton id="73089" elname="Кнопка 8" height="20" width="160" x="500" y="320" isfixed="false" ispressed="false" text="Предыдущее сообщение" z="15" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73119]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 500px; top: 320px; z-index: 15;"></ms-togglebutton><ms-togglebutton id="73123" elname="Кнопка 9" height="20" width="160" x="10" y="360" isfixed="false" ispressed="false" text="Показать легенду" z="16" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73153]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 10px; top: 360px; z-index: 16;"></ms-togglebutton><ms-togglebutton id="73157" elname="Кнопка 10" height="20" width="160" x="170" y="360" isfixed="false" ispressed="false" text="Печать" z="17" tabindex="4" backgroundcolor="rgb(255,188,0)" actionlist="{&quot;click&quot;:[73187]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 170px; top: 360px; z-index: 17;"></ms-togglebutton><ms-togglebutton id="73191" elname="Кнопка 11" height="20" width="160" x="340" y="360" isfixed="false" ispressed="false" text="Квитировать на странице" z="18" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73221]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 340px; top: 360px; z-index: 18;"></ms-togglebutton><ms-togglebutton id="73225" elname="Кнопка 12" height="20" width="160" x="500" y="360" isfixed="false" ispressed="false" text="Экспортировать" z="19" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73255]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 500px; top: 360px; z-index: 19;"></ms-togglebutton><ms-togglebutton id="73259" elname="Кнопка 13" height="20" width="160" x="10" y="400" isfixed="false" ispressed="false" text="Открыть дерево объекта" z="20" tabindex="4" backgroundcolor="LIME" actionlist="{&quot;click&quot;:[73289]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 10px; top: 400px; z-index: 20;"></ms-togglebutton><ms-togglebutton id="73293" elname="Кнопка 14" height="20" width="160" x="170" y="400" isfixed="false" ispressed="false" text="Переход по дате" z="21" tabindex="4" actionlist="{&quot;click&quot;:[73323]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 170px; top: 400px; z-index: 21;"></ms-togglebutton><ms-togglebutton id="73352" elname="Кнопка с фиксацией 1" height="20" width="80" x="10" y="500" isfixed="true" ispressed="false" text="Активность" z="22" tabindex="5" bordercolor="WHITE" textcolor="WHITE" backgroundcolor="rgb(74,183,255)" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 10px; top: 500px; z-index: 22;"></ms-togglebutton><ms-text id="73513" elname="Текст 3" height="20" width="230" x="90" y="500" z="23" tabindex="6" text="Активация/деактивация 5-ти тревог" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: center; text-align: center; align-items: center; background-color: transparent; height: 20px; width: 230px; left: 90px; top: 500px; z-index: 23;"></ms-text><ms-togglebutton id="73527" elname="Кнопка 15" height="20" width="160" x="700" y="280" isfixed="false" ispressed="false" text="Следующая страница" z="24" tabindex="7" actionlist="{&quot;click&quot;:[73558]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 700px; top: 280px; z-index: 24;"></ms-togglebutton><ms-togglebutton id="73562" elname="Кнопка 16" height="20" width="160" x="860" y="280" isfixed="false" ispressed="false" text="Предыдущая страница" z="25" tabindex="7" actionlist="{&quot;click&quot;:[73592]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 860px; top: 280px; z-index: 25;"></ms-togglebutton><ms-togglebutton id="73596" elname="Кнопка 17" height="20" width="160" x="1030" y="280" isfixed="false" ispressed="false" text="Первая страница" z="26" tabindex="7" actionlist="{&quot;click&quot;:[73626]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1030px; top: 280px; z-index: 26;"></ms-togglebutton><ms-togglebutton id="73630" elname="Кнопка 18" height="20" width="160" x="1190" y="280" isfixed="false" ispressed="false" text="Последняя страница" z="27" tabindex="7" actionlist="{&quot;click&quot;:[73660]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1190px; top: 280px; z-index: 27;"></ms-togglebutton><ms-togglebutton id="73664" elname="Кнопка 19" height="20" width="160" x="700" y="320" isfixed="false" ispressed="false" text="Квитировать ссобщение" z="28" tabindex="7" actionlist="{&quot;click&quot;:[73694]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 700px; top: 320px; z-index: 28;"></ms-togglebutton><ms-togglebutton id="73698" elname="Кнопка 20" height="20" width="160" x="860" y="320" isfixed="false" ispressed="false" text="Следующее сообщение" z="29" tabindex="7" actionlist="{&quot;click&quot;:[73728]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 860px; top: 320px; z-index: 29;"></ms-togglebutton><ms-togglebutton id="73732" elname="Кнопка 21" height="20" width="160" x="1030" y="320" isfixed="false" ispressed="false" text="Предыдущее сообщение" z="30" tabindex="7" actionlist="{&quot;click&quot;:[73762]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1030px; top: 320px; z-index: 30;"></ms-togglebutton><ms-togglebutton id="73766" elname="Кнопка 22" height="20" width="160" x="1190" y="320" isfixed="false" ispressed="false" text="Обновить" z="31" tabindex="7" actionlist="{&quot;click&quot;:[73796]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1190px; top: 320px; z-index: 31;"></ms-togglebutton><ms-togglebutton id="73800" elname="Кнопка 23" height="20" width="160" x="700" y="360" isfixed="false" ispressed="false" text="Показать легенду" z="32" tabindex="7" actionlist="{&quot;click&quot;:[73830]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 700px; top: 360px; z-index: 32;"></ms-togglebutton><ms-togglebutton id="73834" elname="Кнопка 24" height="20" width="160" x="860" y="360" isfixed="false" ispressed="false" text="Печать" z="33" tabindex="7" backgroundcolor="rgb(255,188,0)" actionlist="{&quot;click&quot;:[73864]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 860px; top: 360px; z-index: 33;"></ms-togglebutton><ms-togglebutton id="73868" elname="Кнопка 25" height="20" width="160" x="1030" y="360" isfixed="false" ispressed="false" text="Квитировать все" z="34" tabindex="7" actionlist="{&quot;click&quot;:[73898]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1030px; top: 360px; z-index: 34;"></ms-togglebutton><ms-togglebutton id="73902" elname="Кнопка 26" height="20" width="160" x="1190" y="360" isfixed="false" ispressed="false" text="Квитировать на странице" z="35" tabindex="7" actionlist="{&quot;click&quot;:[73932]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1190px; top: 360px; z-index: 35;"></ms-togglebutton><ms-togglebutton id="73936" elname="Кнопка 27" height="20" width="160" x="700" y="400" isfixed="false" ispressed="false" text="Экспортировать" z="36" tabindex="7" actionlist="{&quot;click&quot;:[73966]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 700px; top: 400px; z-index: 36;"></ms-togglebutton><ms-togglebutton id="73970" elname="Кнопка 28" height="20" width="160" x="860" y="400" isfixed="false" ispressed="false" text="Открыть дерево объекта" z="37" tabindex="7" actionlist="{&quot;click&quot;:[74000]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 860px; top: 400px; z-index: 37;"></ms-togglebutton><ms-togglebutton id="74004" elname="Кнопка 29" height="20" width="160" x="1030" y="400" isfixed="false" ispressed="false" text="Очистить" z="38" tabindex="7" actionlist="{&quot;click&quot;:[74034]}" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 1030px; top: 400px; z-index: 38;"></ms-togglebutton><ms-text id="74053" elname="Текст 4" height="30" width="150" x="10" y="10" z="39" tabindex="8" text="Test Case 12223" fontsize="16" fontbold="true" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: center; text-align: center; align-items: center; background-color: transparent; height: 30px; width: 150px; left: 10px; top: 10px; z-index: 39;"></ms-text><ms-rect id="76078" elname="Прямоугольник 1" height="20" width="80" x="10" y="530" bordergeometry="RECT" backgroundcolor="LIME" z="40" tabindex="9" style="box-sizing: border-box; display: flex; overflow: visible; position: absolute; border-style: solid; border-width: 0px; border-color: gray; pointer-events: none; height: 20px; width: 80px; left: 10px; top: 530px; z-index: 40;"></ms-rect><ms-rect id="76091" elname="Прямоугольник 2" height="20" width="80" x="10" y="550" bordergeometry="RECT" backgroundcolor="rgb(245,240,245)" z="41" tabindex="9" style="box-sizing: border-box; display: flex; overflow: visible; position: absolute; border-style: solid; border-width: 0px; border-color: gray; pointer-events: none; height: 20px; width: 80px; left: 10px; top: 550px; z-index: 41;"></ms-rect><ms-rect id="76104" elname="Прямоугольник 3" height="20" width="80" x="10" y="570" bordergeometry="RECT" backgroundcolor="rgb(255,156,0)" z="42" tabindex="9" style="box-sizing: border-box; display: flex; overflow: visible; position: absolute; border-style: solid; border-width: 0px; border-color: gray; pointer-events: none; height: 20px; width: 80px; left: 10px; top: 570px; z-index: 42;"></ms-rect><ms-text id="76119" elname="Текст 5" height="20" width="220" x="100" y="530" z="43" tabindex="10" text="  - реализован автотест" texthorizontalalign="0" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: flex-start; text-align: left; align-items: center; background-color: transparent; height: 20px; width: 220px; left: 100px; top: 530px; z-index: 43;"></ms-text><ms-text id="76134" elname="Текст 6" height="20" width="220" x="100" y="550" z="44" tabindex="10" text=" - не реализован автотест" texthorizontalalign="0" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: flex-start; text-align: left; align-items: center; background-color: transparent; height: 20px; width: 220px; left: 100px; top: 550px; z-index: 44;"></ms-text><ms-text id="76149" elname="Текст 7" height="20" width="220" x="100" y="570" z="89" tabindex="10" text=" - трудности с реализацией" texthorizontalalign="0" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: flex-start; text-align: left; align-items: center; background-color: transparent; height: 20px; width: 220px; left: 100px; top: 570px; z-index: 89;"></ms-text><ms-text id="76164" elname="Текст 8" height="30" width="110" x="160" y="10" z="90" tabindex="11" text="Методы" fontsize="16" fontbold="true" textcolor="WHITE" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 0px; border-color: gray; justify-content: center; text-align: center; align-items: center; background-color: transparent; height: 30px; width: 110px; left: 160px; top: 10px; z-index: 90;"></ms-text><ms-togglebutton id="83008" elname="Кнопка с фиксацией 2" height="20" width="180" x="480" y="460" isfixed="true" ispressed="false" text="Отображать строку статуса" z="91" tabindex="12" bordercolor="WHITE" textcolor="WHITE" backgroundcolor="rgb(74,183,255)" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: unset; border-width: 1px; border-color: gray; user-select: none; left: 480px; top: 460px; z-index: 91;"></ms-togglebutton><ms-line id="83063" elname="Линия 1" height="480" width="0" x="680" y="10" z="92" tabindex="13" bordercolor="WHITE" style="box-sizing: border-box; display: flex; overflow: visible; position: absolute; border-style: solid; border-width: 0px; border-color: gray; pointer-events: none; left: 680px; top: 10px; z-index: 92;"></ms-line><ms-line id="83076" elname="Линия 2" height="0" width="1330" x="10" y="490" z="93" tabindex="14" bordercolor="WHITE" style="box-sizing: border-box; display: flex; overflow: visible; position: absolute; border-style: solid; border-width: 0px; border-color: gray; pointer-events: none; left: 10px; top: 490px; z-index: 93;"></ms-line></ms-window></ms-frame></ms-window><ms-popup id="service-popup" dragable="true" isvisible="true" modal="true" closable="false" minimized="false" height="74" title="Внимание" resize="false" style="box-sizing: border-box; display: flex; overflow: hidden; position: absolute; border-style: solid; border-width: 1px; border-color: gray; z-index: 20000; right: 0px; bottom: 0px; visibility: hidden;">
+<div style="height:100%;display:flex;padding:4px 14px;justify-content:center;align-items:center;flex-direction:row;">
+<img class="img" src="./styles/preloader.svg" style="width: 36px; height: 36px; visibility: inherit;">
+ <div class="text" style="white-space: nowrap;padding: 0 14px;">Подключение к серверу...</div></div>        
+</ms-popup><script type="module">
+'use strict';
+import { enums } from './controls/enums.js'
+import { Methods } from './observer/methods.js'
+import { mainWorker } from './main.js'
+import { Basic } from './controls/basic.js'
+import { MSPopUpWindow } from './controls/popup_window/popup_window.js'
+import { MSTap } from './controls/tap/tap.js'
+import { MSToggleButton } from './controls/togglebutton/togglebutton.js'
+import { MSDateTimePicker } from './controls/dtpicker/dtpicker.js'
+import { GlobalParameters } from './generated/globalparams.js'
+import { MSDataTree } from './controls/tree/tree.js'
+import { MSFrame } from './controls/frame/frame.js'
+import { MSWindow } from './controls/window/window.js'
+import Formating from './lib/formating.js'
+import { MSRect } from './controls/rect/rect.js'
+import { MSText } from './controls/text/text.js'
+import { MSJournal } from './controls/journal/journal.js'
+import { MSLine } from './controls/line/line.js'
+window._enums = new enums();
+window._globalParams = GlobalParameters.globals;
+window._globalParams.location = { hostname: window._globalParams.MainIP, port: window._globalParams.WebPort };
+window._methods = new Methods(window._globalParams.RequestServerPrefix);
+const formating = new Formating();
+window.customElements.define('ms-popup', MSPopUpWindow);
+window.customElements.define('ms-togglebutton', MSToggleButton);
+window.customElements.define('ms-dtpicker', MSDateTimePicker);
+window.customElements.define('ms-image', Basic);
+window.customElements.define('ms-tree', MSDataTree);
+const main = new mainWorker();
+window.customElements.define('ms-tap', MSTap);
+window.customElements.define('ms-frame', MSFrame);
+window.customElements.define('ms-window', MSWindow);
+
+window.customElements.define('ms-rect', MSRect);
+window.customElements.define('ms-text', MSText);
+window.customElements.define('ms-journal', MSJournal);
+window.customElements.define('ms-line', MSLine);
+</script>
+<script src="lib/echarts.js"></script>
+<script src="lib/tabulator.js"></script>
+<div class="notifi_container">
+            <div class="notifipanel bottom open" style="visibility: hidden;">
+                <div class="btn-open">
+                </div>
+                <div class="infopanel">
+                    <div class="info"></div>
+                    <div class="close"></div>
+                </div>
+            </div>
+            <div class="infopanellist">
+                <div class="ctrl">
+                    <div class="btn-control" id="ntf-close">Свернуть</div>
+                    <div class="btn-sep"></div>
+                    <div class="btn-control" id="ntf-clear">Очистить</div>
+                </div>
+                <ul>
+                </ul>
+                <div class="sizer"></div>
+            </div>
+            </div><div></div><div id="divCancel" style="position: absolute; display: flex; flex-direction: column; inset: 0px; z-index: 10003;"><form id="calend" class="form-calendar" style="margin: 0px; z-index: 1001; left: 244.191px; top: 87.3529px; user-select: none;"><div>
+            <div class="calendar">
+            <div class="calendar__section">
+            <span>День</span>
+            <button type="button" id="up" class="incbtn">▴</button>
+            <input type="number" name="dd" id="dd" class="data_inp" value="19">
+            <button type="button" id="down" class="incbtn">▾</button>
+        </div> <div class="calendar__section">
+            <span>Месяц</span>
+            <button type="button" id="up" class="incbtn">▴</button>
+            <input type="number" name="MM" id="MM" class="data_inp" value="08">
+            <button type="button" id="down" class="incbtn">▾</button>
+        </div> <div class="calendar__section">
+            <span>Год</span>
+            <button type="button" id="up" class="incbtn">▴</button>
+            <input type="number" name="yyyy" id="yyyy" class="data_inp" value="2022">
+            <button type="button" id="down" class="incbtn">▾</button>
+        </div>
+        </div><div class="calendar">
+            <div class="calendar__section">
+            <span>Часы</span>
+            <button type="button" id="up" class="incbtn">▴</button>
+            <input type="number" name="HH" id="HH" class="data_inp" value="22">
+            <button type="button" id="down" class="incbtn">▾</button>
+        </div> <div class="calendar__section">
+            <span>Мин.</span>
+            <button type="button" id="up" class="incbtn">▴</button>
+            <input type="number" name="mm" id="mm" class="data_inp" value="10">
+            <button type="button" id="down" class="incbtn">▾</button>
+        </div>
+        </div>
+            <div class="calendar-btns">
+                <button id="save">Выбрать</button>
+                <button id="cancel">Отмена</button>
+            </div>
+        </div></form></div></body></html>
